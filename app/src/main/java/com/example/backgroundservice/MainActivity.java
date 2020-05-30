@@ -16,10 +16,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (text.getText().toString().equals("Started")) {
                     text.setText("Stopped");
-                    stopService(new Intent(MainActivity.this,service.class));
+                    stopService(new Intent(MainActivity.this, service.class));
                 } else {
                     text.setText("Started");
-                    startService(new Intent(MainActivity.this,service.class));
+                    startService(new Intent(MainActivity.this, service.class));
                 }
             }
         });
